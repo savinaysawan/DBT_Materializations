@@ -2,7 +2,7 @@ version: 2
 
 sources:
   - name: RAW_DATA
-    description: This is a replica of the Postgres database used by our app
+    description: Snowflake details 
     database: TRANSFORMATION_DB  
     schema: RAW_SCH 
     tables:
