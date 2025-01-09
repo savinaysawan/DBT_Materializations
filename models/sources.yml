@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: RAW_DATA
+    description: This is a replica of the Postgres database used by our app
+    database: TRANSFORMATION_DB  
+    schema: RAW_SCH 
+    tables:
+      - name: RAW_ORDERS
+      - name: RAW_CUSTOMERS
+      - name: RAW_PRODUCTS
