@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: RAW_DATA
+    description: Snowflake details 
+    database: TRANSFORMATION_DB  
+    schema: RAW_SCH 
+    tables:
+      - name: RAW_ORDERS
+      - name: RAW_CUSTOMERS
+      - name: RAW_PRODUCTS
