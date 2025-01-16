@@ -27,5 +27,4 @@ models:
     # Applies to all files under models/DBT_Materializations
     DBT_Materializations:
       +database: TRANSFORMATION_DB
-      +schema: RAW_SCH
-      +materialized: view
+      +materialized: table 
