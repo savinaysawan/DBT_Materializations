@@ -1,0 +1,6 @@
+version: 2
+
+models:
+  - name: dbt_mat_proper_tbl
+    config:
+      materialized: table
