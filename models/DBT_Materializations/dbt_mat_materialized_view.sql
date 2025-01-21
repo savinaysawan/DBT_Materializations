@@ -13,7 +13,8 @@ SELECT
     prd.CATEGORY,
     ord.ORDER_DATE,
     ord.SHIP_DATE,
-    DATEDIFF(DAY,ord.ORDER_DATE,ord.SHIP_DATE) AS DELIVERY_DAY_REQUIRED
+    DATEDIFF(DAY,ord.ORDER_DATE,ord.SHIP_DATE) AS DELIVERY_DAY_REQUIRED,
+    current_timestamp as snf_updated_date
 FROM 
      {{ source('RAW_DATA','RAW_ORDERS')}} ord
 JOIN 
