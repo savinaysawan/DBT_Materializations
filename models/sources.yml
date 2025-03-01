@@ -3,7 +3,7 @@ version: 2
 sources:
   - name: RAW_DATA
     description: Snowflake details 
-    database: TRANSFORMATION_DB  
+    database: TRANSFORM_DB  
     schema: RAW_SCH 
     tables:
       - name: RAW_ORDERS

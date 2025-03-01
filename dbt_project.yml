@@ -1,8 +1,4 @@
-
-# Name your project! Project names should contain only lowercase characters
-# and underscores. A good package name should reflect your organization's
-# name or the intended use of these models
-name: 'my_new_project'
+name: 'DBT_Materializations'
 version: '1.0.0'
 config-version: 2
 
@@ -23,8 +19,6 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 
 models:
-  my_new_project:
-    # Applies to all files under models/DBT_Materializations
-    DBT_Materializations:
-      +database: TRANSFORMATION_DB
-      +materialized: table 
+  DBT_Materializations:
+    +database: TRANSFORMATION_DB
+    +materialized: table 
