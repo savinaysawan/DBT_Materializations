@@ -9,4 +9,5 @@ sources:
       - name: RAW_ORDERS
       - name: RAW_CUSTOMERS
       - name: RAW_PRODUCTS
+      - name: EMPLOYEES_HIRE
 
