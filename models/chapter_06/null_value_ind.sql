@@ -12,6 +12,6 @@ select
     GENDER,
     SALARY,
     HIREDATE,
-    {{ null_test_macro('EMPLOYEES_HIRE', 'GENDER') }}
+    {{ null_test_macro('EMPLOYEES', 'GENDER') }}
 FROM 
-    {{ source('RAW_DATA', 'EMPLOYEES_HIRE') }}
+    {{ source('RAW_DATA', 'EMPLOYEES') }}

@@ -1,0 +1,5 @@
+version: 2
+data_tests:
+  - name: data_duplicate_singular_test
+    description: >
+      Return a row when duplicate entry present in RAW_CUSTOMERS table. 

@@ -1,0 +1,19 @@
+models:
+  - name: customer_model_tests
+    columns:
+      - name: customerid
+        tests:
+          - not_null
+          - unique
+  - name: null_model_test_tbl
+    columns:
+      - name: AGE
+        tests:
+          - not_null
+          
+  - name: raw_orders_data_tbl                 # This refers to the raw_orders_data_tbl model in dbt.
+    tests:
+      - relationships:
+          column_name: customer_id
+          to: ref('raw_customers_data_tbl')   # This refers to the 'raw_customers_data_tbl' model in dbt
+          field: customerid                   # This is the primary key in the 'raw_customers_data_tbl' model.

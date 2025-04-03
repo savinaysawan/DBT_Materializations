@@ -9,5 +9,6 @@ sources:
       - name: RAW_ORDERS
       - name: RAW_CUSTOMERS
       - name: RAW_PRODUCTS
-      - name: EMPLOYEES_HIRE
+      - name: EMPLOYEES
+      - name: SIMPLE_DATA_NULL_TBL
 

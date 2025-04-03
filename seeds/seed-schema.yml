@@ -1,0 +1,7 @@
+seeds:
+  - name: order_status_tbl
+    columns:
+      - name: OrderStatus
+        tests:
+          - accepted_values:
+              values: ['Pending', 'Shipped', 'Delivered', 'Canceled']

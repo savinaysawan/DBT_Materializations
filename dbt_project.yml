@@ -20,5 +20,5 @@ clean-targets:         # directories to be removed by `dbt clean`
 
 models:
   DBT_Materializations:
-    +database: TRANSFORMATION_DB
+    +database: TRANSFORM_DB
     +materialized: table 
