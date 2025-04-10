@@ -11,4 +11,5 @@ sources:
       - name: RAW_PRODUCTS
       - name: EMPLOYEES
       - name: SIMPLE_DATA_NULL_TBL
+      - name: EMAIL_TEST_TBL
 

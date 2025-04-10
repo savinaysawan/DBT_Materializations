@@ -1,0 +1,24 @@
+version: 2
+
+models:
+  - name: email_test_tbl_model
+    columns:
+      - name: EMAIL
+        tests:
+          - is_valid_email
+
+  - name: generic_test_range_value
+    columns:
+      - name: age
+        tests:
+          - not_null
+          - age_in_range:  
+             column_name: "age"
+
+  - name: check_age_threshold_value_test
+    columns:
+      - name: age
+        tests:
+          - error_threshold_test_model: 
+             column_name: "age"
+              
