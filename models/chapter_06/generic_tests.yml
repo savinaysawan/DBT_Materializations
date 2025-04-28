@@ -21,4 +21,8 @@ models:
         tests:
           - error_threshold_test_model: 
              column_name: "age"
-              
+
+  - name: generic_open_source_test
+    tests:
+      - dbt_utils.equal_rowcount:
+          compare_model: ref('generic_test_range_value')              
