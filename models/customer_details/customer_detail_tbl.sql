@@ -1,10 +1,10 @@
 {{config(
   materialized='table',
-  alias='raw_customers_data_tbl'
+  alias='raw_customer_detail_tbl'
 )
 }}
- 
-SELECT 
+
+select 
 customerid,
 customername,
 segment,

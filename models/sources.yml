@@ -9,7 +9,4 @@ sources:
       - name: RAW_ORDERS
       - name: RAW_CUSTOMERS
       - name: RAW_PRODUCTS
-      - name: EMPLOYEES
-      - name: SIMPLE_DATA_NULL_TBL
-      - name: EMAIL_TEST_TBL
 
