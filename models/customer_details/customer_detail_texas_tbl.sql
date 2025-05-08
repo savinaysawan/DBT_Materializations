@@ -1,6 +1,6 @@
 {{config(
   materialized='table',
-  alias='raw_customer_detail_tbl',
+  alias='raw_customer_detail_texas_tbl',
   unique_key='customerid'
 )
 }}
@@ -12,4 +12,5 @@ segment,
 country,
 state
 FROM
-{{ source('RAW_DATA','RAW_CUSTOMERS')}} 
+{{ ref('customer_detail_tbl') }}
+where state='Texas'
