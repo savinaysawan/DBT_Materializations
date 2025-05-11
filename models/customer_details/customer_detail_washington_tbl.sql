@@ -9,8 +9,7 @@ select
 customerid,
 customername,
 segment,
-country,
-state
+country
 FROM
 {{ ref('customer_detail_tbl') }}
 where state='Washington'
