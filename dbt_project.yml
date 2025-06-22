@@ -21,4 +21,11 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   DBT_Materializations:
     +database: TRANSFORM_DB
-    +materialized: table 
+    +materialized: table
+    +pre-hook:
+      - "{{ log_model_start(this) }}"
+    +post-hook:
+      - "{{ log_model_end(this, success=true) }}"
+
+on-run-end:
+  - "{{ log_failed_models(results) }}"

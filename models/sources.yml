@@ -9,4 +9,12 @@ sources:
       - name: RAW_ORDERS
       - name: RAW_CUSTOMERS
       - name: RAW_PRODUCTS
+      - name: jaffle_shop_customers
+      - name: jaffle_shop_orders
+      - name: jaffle_shop_items
+      - name: jaffle_shop_products
+      - name: jaffle_shop_stores
+      - name: jaffle_shop_supplies
+     
+
 
