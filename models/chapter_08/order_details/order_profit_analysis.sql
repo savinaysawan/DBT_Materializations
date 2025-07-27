@@ -1,10 +1,9 @@
 {{ config(
     materialized='incremental',
     alias='order_profit_analysis',
-    unique_key='order_id',
-    incremental_strategy='merge'
+    unique_key='order_id'
 ) }}
-
+WITH enriched_orders AS (
     SELECT
         o.ORDER_ID,
         o.ORDER_DATE,
@@ -32,3 +31,9 @@
         ON o.CUSTOMER_ID = c.CUSTOMERID
     LEFT JOIN {{ source('RAW_DATA', 'RAW_PRODUCTS') }} p
         ON o.PRODUCT_ID = p.PRODUCTID
+    {% if is_incremental() %}
+        WHERE o.ORDER_DATE > (SELECT MAX(ORDER_DATE) FROM {{ this }})
+    {% endif %}
+)
+
+SELECT * FROM enriched_orders
