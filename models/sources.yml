@@ -9,14 +9,16 @@ sources:
       - name: RAW_ORDERS
       - name: RAW_CUSTOMERS
       - name: RAW_PRODUCTS
-      - name: RAW_ORDER_INC
-      - name: RAW_ORDER_INC_02
       - name: jaffle_shop_customers
       - name: jaffle_shop_orders
       - name: jaffle_shop_items
       - name: jaffle_shop_products
       - name: jaffle_shop_stores
       - name: jaffle_shop_supplies
+      - name: chatbot_emp
+      - name: orders_source
+      - name: customers_src_tbl
+
      
 
 
